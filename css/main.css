@@ -43,6 +43,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .header__logo {
   height: 65px;
@@ -67,30 +68,30 @@ html {
   height: 100%;
   border: none;
   border-radius: 15.5px;
-  padding-left: 50px;
+  padding: 0 10px 0 50px;
 }
 .header__buttons {
   max-width: 85px;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  z-index: 100;
 }
 .header__menu {
   position: absolute;
   top: 0;
   right: 0;
-  background: #fff;
-  padding: 74px 62px 80px 74px;
-  z-index: 10;
+  z-index: auto;
   opacity: 0;
   transition: all 0.3s ease-out;
+  padding: 0 0 80px 74px;
 }
 .header__menu--button {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 53px;
+  align-items: center;
+  height: 65px;
+  margin-bottom: 30px;
 }
 .header__menu--button-language {
   font-size: 24px;
@@ -127,6 +128,17 @@ html {
 }
 .header__menu--sotial-icon img {
   width: 25px;
+}
+.header__menu--fone {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -10;
+  padding: 1000px;
+  background-color: #fff;
+}
+.header .menu-changed {
+  opacity: 1;
 }
 
 .main {
