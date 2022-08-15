@@ -26,8 +26,14 @@ ul {
 html {
   overflow-x: hidden;
   background: url(../img/bechir-kaddech-W9BSswrPqDY-unsplash\ 1.png) no-repeat;
-  background-size: cover;
+  background-size: 100%;
   font-family: "Futura PT";
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 60px;
+  font-weight: 700;
 }
 
 .container {
@@ -100,6 +106,9 @@ html {
   font-style: italic;
   word-spacing: 3px;
 }
+.header__menu li:nth-child(2) {
+  margin: 15px 0;
+}
 .header__menu--series-list {
   margin-bottom: 40px;
 }
@@ -108,9 +117,6 @@ html {
   font-weight: 700;
   line-height: 31px;
   color: #000;
-}
-.header__menu--series-list li:nth-child(2) {
-  margin: 15px 0;
 }
 .header__menu--series-list li:hover {
   text-decoration: underline;
@@ -123,9 +129,6 @@ html {
   font-weight: 400;
   line-height: 23px;
 }
-.header__menu--page-list li:nth-child(2) {
-  margin: 15px 0;
-}
 .header__menu--sotial-icon img {
   width: 25px;
 }
@@ -134,7 +137,7 @@ html {
   bottom: 0;
   left: 0;
   z-index: -10;
-  padding: 1000px;
+  padding: 300px;
   background-color: #fff;
 }
 .header .menu-changed {
@@ -164,4 +167,70 @@ html {
   line-height: 23px;
   padding: 7px 18px;
   background: #000;
+}
+
+.categories {
+  background-color: #fff;
+  padding: 120px 0;
+  position: relative;
+}
+.categories__title {
+  margin-bottom: 30px;
+}
+.categories__slider {
+  display: flex;
+  position: relative;
+  right: 33.3%;
+}
+.categories__slider--item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 856px;
+  width: 100%;
+  min-width: 856px;
+  height: 319px;
+  clip-path: polygon(17% 0%, 100% 0%, 83% 100%, 0% 100%);
+}
+.categories__slider--item img {
+  width: 376px;
+}
+.categories__slider--item span {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+}
+.categories__slider .item--1 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.62) 0%, rgba(0, 0, 0, 0) 100%), url(../img/offroad.jpg) center top -350px;
+  background-size: cover;
+}
+.categories__slider .item--2 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.62) 0%, rgba(0, 0, 0, 0) 100%), url(../img/road.jpg) center top -350px;
+  background-size: cover;
+}
+.categories__slider .item--3 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.62) 0%, rgba(0, 0, 0, 0) 100%), url(../img/street.jpg) center top -350px;
+  background-size: cover;
+}
+.categories .button {
+  z-index: 100;
+  position: absolute;
+  height: 319px;
+  font-size: 33px;
+  max-width: 200px;
+  width: 100%;
+  color: #fff;
+  top: 211px;
+}
+.categories .button__left {
+  left: 0;
+  background: linear-gradient(to right, black, transparent);
+}
+.categories .button__right {
+  right: 0;
+  background: linear-gradient(to left, black, transparent);
 }/*# sourceMappingURL=main.css.map */

@@ -26,8 +26,14 @@ ul {
 html {
   overflow-x: hidden;
   background: url(../img/bechir-kaddech-W9BSswrPqDY-unsplash\ 1.png) no-repeat;
-  background-size: cover;
+  background-size: 100%;
   font-family: "Futura PT";
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 60px;
+  font-weight: 700;
 }
 
 .container {
@@ -98,15 +104,15 @@ html {
         word-spacing: 3px;
       }
     }
+    li:nth-child(2) {
+      margin: 15px 0;
+    }
     &--series-list {
       li {
         font-size: 24px;
         font-weight: 700;
         line-height: 31px;
         color: #000;
-        &:nth-child(2) {
-          margin: 15px 0;
-        }
         &:hover {
           text-decoration: underline;
         }
@@ -118,9 +124,6 @@ html {
         font-size: 18px;
         font-weight: 400;
         line-height: 23px;
-        &:nth-child(2) {
-          margin: 15px 0;
-        }
       }
       margin-bottom: 40px;
     }
@@ -134,7 +137,7 @@ html {
       bottom: 0;
       left: 0;
       z-index: -10;
-      padding: 1000px;
+      padding: 300px;
       background-color: #fff;
     }
   }
@@ -164,5 +167,87 @@ html {
     line-height: 23px;
     padding: 7px 18px;
     background: #000;
+  }
+}
+.categories {
+  background-color: #fff;
+  padding: 120px 0;
+  position: relative;
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__slider {
+    // width: 2400px;
+    display: flex;
+    position: relative;
+    // transform: translateX(-500px);
+    right: 33.3%;
+    &--item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      max-width: 856px;
+      width: 100%;
+      min-width: 856px;
+      height: 319px;
+      clip-path: polygon(17% 0%, 100% 0%, 83% 100%, 0% 100%);
+      img {
+        width: 376px;
+      }
+      span {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 46px;
+        color: transparent;
+        -webkit-text-stroke: 1px #fff;
+      }
+    }
+    .item--1 {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.62) 0%,
+          rgba(0, 0, 0, 0) 100%
+        ),
+        url(../img/offroad.jpg) center top -350px;
+      background-size: cover;
+    }
+    .item--2 {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.62) 0%,
+          rgba(0, 0, 0, 0) 100%
+        ),
+        url(../img/road.jpg) center top -350px;
+      background-size: cover;
+    }
+    .item--3 {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.62) 0%,
+          rgba(0, 0, 0, 0) 100%
+        ),
+        url(../img/street.jpg) center top -350px;
+      background-size: cover;
+    }
+  }
+  .button {
+    z-index: 100;
+    position: absolute;
+    height: 319px;
+    font-size: 33px;
+    max-width: 200px;
+    width: 100%;
+    color: #fff;
+    top: 211px;
+  }
+  .button__left {
+    left: 0;
+    background: linear-gradient(to right, black, transparent);
+  }
+  .button__right {
+    right: 0;
+    background: linear-gradient(to left, black, transparent);
   }
 }
